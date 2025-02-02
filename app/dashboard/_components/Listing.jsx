@@ -31,7 +31,7 @@ const Listing = () => {
   return (
     <div>
       <div className=" flex justify-between items-center">
-        <h2 className=" font-bold text-3xl">Hello, {user?.fullName}</h2>
+        <h2 className=" font-bold text-3xl text-primary font-serif italic">Hello, {user?.fullName}</h2>
         <Link href={"/dashboard/create-new"}>
           <Button> + Redesign Room</Button>
         </Link>
@@ -40,9 +40,9 @@ const Listing = () => {
       {userRoomList.length == 0 ? (
         <EmptyState />
       ) : (
-        <div className=" min-h-[60vh] mt-10">
-        <h2 className=" font-semibold text-blue-600 font-mono text-xl  mb-2">Ai Redesigned Room Studio</h2>
-          <div className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className=" min-h-[70vh] mt-10">
+        <h2 className=" font-semibold font-mono text-xl  mb-2">Ai Redesigned Room Studio</h2>
+          <div className=" grid grid-cols-1 mb-5 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {userRoomList.map((room, index) => {
               return <RoomDesginCard key={index} room={room} />;
             })}

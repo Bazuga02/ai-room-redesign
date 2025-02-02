@@ -9,7 +9,6 @@ const replicate = new Replicate({
   auth: process.env.NEXT_PUBLIC_REPLICATE_API_TOKEN,
 });
 export async function POST(req) {
-  // const { user } = useUser();
   const { imageUrl, roomType, designType, additionalRequirement, userEmail } =
     await req.json();
 

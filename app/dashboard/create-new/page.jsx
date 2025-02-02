@@ -105,10 +105,10 @@ const CreateNew = () => {
   };
 
   return (
-    <div>
-      <h2 className="font-bold text-4xl text-pink-500 text-center">
-        Experience the Magic of{" "}
-        <span className="text-blue-500">AI ReModelling</span>
+    <div className="mb-5">
+      <h2 className="font-bold text-3xl text-primary text-center">
+        Experience the Magic of{"  "}
+        <span className="  text-purple-500 text-4xl font-sans italic"> AI Remodelling</span>
       </h2>
       <p className="text-center text-gray-600 mt-5 font-semibold">
         Transform any room with a click. Select a space, choose a style, and
@@ -139,12 +139,12 @@ const CreateNew = () => {
           <Button
             onClick={GenerateAiImage}
             disabled={isLoading}
-            className="w-full mt-5 bg-pink-500 hover:bg-pink-700 hover:scale-105 transition-all duration-150"
+            className="w-full mt-5 bg-purple-500 hover:bg-purple-700 hover:scale-105 transition-all duration-150"
           >
             Generate
           </Button>
           <p className="text-sm text-gray-500">
-            <span className="font-semibold">Note: </span>1 Credit will be used
+            <span className="font-semibold text-red-500">Note: </span>1 Credit will be used
             to generate image
           </p>
         </div>

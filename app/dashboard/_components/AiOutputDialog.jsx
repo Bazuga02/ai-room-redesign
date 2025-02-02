@@ -12,9 +12,9 @@ import "react-before-after-slider-component/dist/build.css";
 const AiOutputDialog = ({ openDialog, closeDialog, orgImg, aiImg }) => {
   const downloadImage = async () => {
     try {
-      const response = await fetch(aiImg); // Fetch the image from the URL
-      const blob = await response.blob(); // Convert response to a blob
-      const url = URL.createObjectURL(blob); // Create a temporary URL for the blob
+      const response = await fetch(aiImg); 
+      const blob = await response.blob(); 
+      const url = URL.createObjectURL(blob); 
 
       // Create an anchor element to download the image
       const link = document.createElement("a");

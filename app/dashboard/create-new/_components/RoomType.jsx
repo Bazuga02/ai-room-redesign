@@ -11,7 +11,8 @@ const RoomType = ({ selectedRoomType }) => {
   return (
     <div>
       <label htmlFor="" className=" text-slate-600">
-        Select Room Type *
+        Select Room Type
+        <span className=" text-red-500 font-bold">*</span>
       </label>
       <Select onValueChange={(value) => selectedRoomType(value)}>
         <SelectTrigger className="w-full">

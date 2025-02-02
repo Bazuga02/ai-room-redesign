@@ -1,31 +1,23 @@
 "use client";
-import { UserDetailContext } from "@/app/_context/UserDetailContext";
 import { Button } from "@/components/ui/button";
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useContext } from "react";
-import { MdDashboardCustomize } from "react-icons/md";
+import React from "react";
+import { FaHouseDamage } from "react-icons/fa";
 
 const MainHeader = () => {
-  const { userDetail, setUserDetail } = useContext(UserDetailContext);
 
   return (
-    <div className=" p-5 shadow-xl flex justify-between items-center   ">
-      <div className=" flex gap-2 items-center">
-        <Image src={"/logo.svg"} height={40} width={40} alt="logo" />
-        <h1 className="font-bold text-xl ">
-          AI <span className=" text-pink-500">Ro</span>
-          <span className=" text-blue-500 ml-[-2px]">om</span> Redesign
+    <div className=" p-5  flex justify-between items-center shadow-lg   ">
+      <div className=" flex gap-2 items-center text-primary">
+        <FaHouseDamage  />
+        <h1 className=" font-extrabold text-xl  font-sans ">
+          VisionRooms{" "}
         </h1>
       </div>
 
       <Link href="/dashboard">
-        <Button className=" bg-primary px-8 font-semibold">
-          SignIn
-        </Button>
+        <Button className=" bg-primary px-8 font-semibold">SignIn</Button>
       </Link>
-
     </div>
   );
 };

@@ -15,7 +15,7 @@ const ImageSelection = ({ selectedImage }) => {
       <div className=" mt-3">
         <label htmlFor="upload-image">
           <div
-            className={` p-2 border-2 rounded-xl border-dotted flex justify-center border-blue-500 bg-slate-200 cursor-pointer hover:shadow-lg
+            className={` p-2 border-2 rounded-xl border-dotted flex justify-center  bg-slate-200 cursor-pointer hover:shadow-lg
             ${file && "p-10 bg-white "}`}
           >
             {!file ? (

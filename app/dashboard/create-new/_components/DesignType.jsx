@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const DesignType = ( { selectedDesignType } ) => {
+const DesignType = ({ selectedDesignType }) => {
   const Designs = [
     {
       name: "Modern",
@@ -38,7 +38,10 @@ const DesignType = ( { selectedDesignType } ) => {
   const [selectedOption, setSelectedOption] = useState();
   return (
     <div className=" mt-4">
-      <label className=" text-gray-500">Select Interior Design Type</label>
+      <label className=" text-gray-500">
+        Select Interior Design Type
+        <span className=" text-red-500 font-bold">*</span>
+      </label>
       <div className=" mt-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {Designs.map((design, index) => (
           <div
