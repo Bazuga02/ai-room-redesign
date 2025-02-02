@@ -18,7 +18,7 @@ export const useBuyCredits = (userDetail, setUserDetail) => {
       const { order } = await response.json();
 
       const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        key: process.env.NEXT_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: order.currency,
         name: "AI Room Redesign",
